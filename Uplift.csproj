@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UserSecretsId>aspnet-Uplift-FAD089E4-7FD7-48A6-ADC4-4210C5AAD466</UserSecretsId>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.0.0" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\Uplift.DataAccess\Uplift.DataAccess.csproj" />
+    <ProjectReference Include="..\Uplift.Models\Uplift.Models.csproj" />
+    <ProjectReference Include="..\Uplift.Utility\Uplift.Utility.csproj" />
+  </ItemGroup>
+
+</Project>
