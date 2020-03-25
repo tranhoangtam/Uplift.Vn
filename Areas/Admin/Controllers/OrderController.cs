@@ -58,6 +58,16 @@ namespace Uplift.Areas.Admin.Controllers
             return View(nameof(Index));
         }
 
+        public IActionResult OrderStatus(int id)
+        {
+            OrderViewModel orderVM = new OrderViewModel()
+            {
+                OrderHeader = _unitOfWork.OrderHeader.Get(id),
+                OrderDetails = _unitOfWork.OrderDetails.GetAll(filter: o => o.OrderHeaderId == id)
+            };
+            return PartialView("OrderStatus", orderVM);
+        }
+
 
 
         #region API Calls

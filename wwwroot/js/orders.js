@@ -39,7 +39,15 @@ function loadDataTable(url) {
             }
         ],
         "language": {
-            "emptyTable":"Không có dữ liệu"
+            "emptyTable": "Không có dữ liệu",
+            "paginate": {
+                "previous": "Lùi",
+                "next": "Tới"
+            },
+            "sSearch": "Tìm kiếm:",
+            //"info": "Đang hiện _START_ đến _END_ của _TOTAL_ mẫu tin",
+            "info": "Tổng _TOTAL_ mẫu tin",
+            "sLengthMenu": "Hiện _MENU_ mẫu tin",
         },
         "width":"100%"
     });
